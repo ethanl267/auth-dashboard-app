@@ -1,0 +1,93 @@
+/* Login.css */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow: 12px 12px 24px #c9c9c9, -12px -12px 24px #ffffff;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    color: #333;
+    animation: slideDown 0.6s ease;
+  }
+  
+  .login-input {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: inset 3px 3px 8px #d1d1d1, inset -3px -3px 8px #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  .login-input:focus {
+    box-shadow: inset 3px 3px 8px #c0c0c0, inset -3px -3px 8px #e8e8e8;
+    outline: none;
+  }
+  
+  .login-button {
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background: #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    animation: fadeUp 0.8s ease forwards;
+  }
+  
+  .login-button:hover {
+    background: #43a047;
+  }
+  
+  .link-register {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    animation: fadeIn 1.2s ease;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
